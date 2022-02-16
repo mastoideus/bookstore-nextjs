@@ -1,0 +1,95 @@
+.rightSection {
+  flex: 3;
+
+  margin-left: 3rem;
+  font-family: "Oswald";
+  color: brown;
+}
+
+.rightSection h1 {
+  font-weight: lighter;
+}
+
+.rightHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 2rem;
+  position: sticky;
+  top: 100px;
+  z-index: 200;
+}
+
+.genres {
+  display: flex;
+  align-items: center;
+  padding: 0.3rem 0.7rem;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 20px;
+  transition: all 0.3s;
+}
+
+.genres button {
+  margin-right: 1.5rem;
+  cursor: pointer;
+  font-weight: lighter;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-family: "Oswald";
+  transition: all 0.3s;
+}
+
+.genresBackground {
+  background-color: white;
+  border: 1px solid red;
+}
+.genres button:hover {
+  color: red;
+}
+
+.dividingLine {
+  width: 96%;
+  height: 3px;
+  background-color: rgb(241, 205, 205);
+  border-radius: 0.6rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  position: sticky;
+  top: 120px;
+  z-index: 100;
+}
+
+.booksList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  margin-left: 5rem;
+  gap: 3rem;
+}
+
+@media (max-width: 666px) {
+  .rightSection {
+    max-width: 100%;
+    margin-left: 0px;
+  }
+  .booksList {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .genres {
+    flex-wrap: wrap;
+  }
+  .genres button {
+    font-size: 13px;
+    margin-right: 0.3rem;
+  }
+
+  .rightHeader h1 {
+    font-size: 20px;
+    width: 70%;
+    margin-left: 1rem;
+  }
+}

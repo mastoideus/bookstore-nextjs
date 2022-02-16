@@ -1,0 +1,8 @@
+.featuredTitle {
+  font-family: "Oswald", sans-serif;
+  margin: 20px;
+}
+.slick-prev:before,
+.slick-next:before {
+  color: black !important;
+}

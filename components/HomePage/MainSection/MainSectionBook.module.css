@@ -1,0 +1,51 @@
+.mainBook {
+  width: 25%;
+  text-align: center;
+  background-color: white;
+  box-shadow: 2px 8px 13px #ccc;
+  padding: 2rem;
+  padding-bottom: 0rem;
+}
+
+.mainBookInfo {
+  padding: 1rem;
+  text-align: center;
+}
+
+.mainBookInfo h1 {
+  color: black;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.ratingBtn {
+  font-size: 12.4px;
+  margin-bottom: 10px;
+  border-left: 3px solid red;
+  transition: all 0.3s;
+}
+.ratingBtn:hover {
+  border-right: 3px solid black;
+  border-left: none;
+}
+.mainBookInfo h3 {
+  color: chocolate;
+  font-weight: lighter;
+  font-size: 0.9rem;
+}
+
+.mainBookInfo .bookBtn {
+  font-size: 1.3rem;
+  margin-top: 0;
+}
+.mainBookInfo .bookBtn::before {
+  border-radius: 0;
+}
+
+@media (max-width: 666px) {
+  .mainBook {
+    width: 80%;
+  }
+}

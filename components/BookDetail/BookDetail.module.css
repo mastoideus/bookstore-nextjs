@@ -1,0 +1,76 @@
+.screen {
+  display: flex;
+  padding-top: 8rem;
+
+  align-items: center;
+  justify-content: space-around;
+
+  min-height: 100vh;
+}
+
+.book {
+  width: 50%;
+  height: 32rem;
+  background-color: brown;
+}
+
+.rub {
+  width: 97%;
+  height: 97%;
+  margin: 1% auto;
+  border: 2px solid lightcoral;
+  text-align: center;
+}
+
+.rub h1 {
+  color: wheat;
+  font-family: "Oswald";
+  font-size: 3rem;
+}
+
+.rub h3 {
+  font-family: "Meow Script", cursive;
+  font-size: 1.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.imgRub {
+  background-color: rgb(97, 9, 9);
+  padding: 1rem 0;
+  margin: 0 auto;
+  width: 240px;
+  height: 335px;
+}
+
+.imgShadow {
+  width: 200px;
+  height: 300px;
+  margin: auto;
+  box-shadow: 3px 11px 17px black;
+}
+
+.bookInfo h1 {
+  font-family: "Meow Script";
+  font-size: 4rem;
+}
+
+.bookInfo {
+  margin-left: 3rem;
+}
+
+@media (max-width: 666px) {
+  .screen {
+    flex-direction: column;
+  }
+  .book {
+    width: 80%;
+  }
+  .bookInfo h1 {
+    font-size: 34px;
+  }
+  .bookInfo {
+    text-align: center;
+    margin-left: 0;
+    margin-top: 2.5rem;
+  }
+}

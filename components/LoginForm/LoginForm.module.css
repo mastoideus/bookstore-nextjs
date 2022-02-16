@@ -1,0 +1,97 @@
+.loginForm {
+  background-color: brown;
+  text-align: center;
+  width: 40%;
+  margin: 0 auto;
+  box-shadow: 3px 8px 15px grey;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2.5rem;
+  padding-bottom: 2rem;
+  margin-bottom: 3rem;
+}
+.loginForm h2 {
+  margin-bottom: 1.5rem;
+  font-family: "Oswald";
+  color: bisque;
+  background-color: black;
+  width: 14%;
+  margin: 10px auto;
+}
+.control {
+  display: flex;
+  flex-direction: column;
+}
+.control label {
+  font-family: "Meow Script", cursive;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  color: rgb(145, 128, 128);
+}
+
+.control input {
+  width: 50%;
+  margin: 0 auto;
+  outline: none;
+  border: none;
+  background-color: burlywood;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+}
+
+.loginBtn {
+  width: 20%;
+  margin: auto;
+  color: bisque;
+}
+
+.register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Oswald";
+}
+.register p {
+  font-family: "Meow Script", cursive;
+
+  font-size: 1.6rem;
+  color: rgb(145, 128, 128);
+  margin-right: 1rem;
+}
+
+.regWord {
+  font-size: 1.3rem;
+  padding: 0.3rem;
+  color: rgb(2, 1, 0);
+  outline: none;
+  background-color: transparent;
+  border: none;
+  font-weight: 900;
+  cursor: pointer;
+}
+.resMessage {
+  text-align: center;
+  font-family: "Meow Script";
+  width: 40%;
+  margin: auto;
+}
+
+.regWord:hover {
+  color: rgb(233, 162, 162);
+}
+
+@media (max-width: 666px) {
+  .loginForm {
+    width: 90%;
+  }
+  .loginForm h2 {
+    width: 20%;
+  }
+  .resMessage {
+    width: 90%;
+  }
+  .loginBtn {
+    width: 40%;
+  }
+}

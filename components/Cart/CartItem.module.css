@@ -1,0 +1,57 @@
+.cartItem {
+  width: 12%;
+  min-height: 170px;
+  border: 15px solid brown;
+  padding-top: 1rem;
+  text-align: center;
+  box-shadow: 0px 0px 20px 20px rgb(243, 191, 191);
+}
+
+.cartItem .btnB {
+  padding: 5px;
+  font-size: 18px;
+  width: 100%;
+  margin-right: 0.3rem;
+  margin-left: 0.3rem;
+}
+
+.cartItem h6 {
+  margin-bottom: 1rem;
+  color: grey;
+}
+
+.cartItem small {
+  font-family: "Meow Script", cursive;
+  font-size: 25px;
+}
+.cartItem p {
+  font-size: larger;
+  font-family: "Oswald";
+}
+
+.cartItem .btnB::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  background-color: brown;
+  top: 0;
+  z-index: -100;
+  left: 0;
+  transition: all 0.5s;
+  border-radius: 0.5rem;
+}
+
+.btnB:hover {
+  color: white;
+  z-index: 100;
+}
+.btnB:hover::before {
+  height: 100%;
+}
+
+@media (max-width: 666px) {
+  .cartItem {
+    width: 45%;
+  }
+}

@@ -1,0 +1,9 @@
+.mainSection {
+  display: flex;
+  margin-top: 8rem;
+}
+
+@media (max-width: 666px) {
+  .mainSection {
+  }
+}

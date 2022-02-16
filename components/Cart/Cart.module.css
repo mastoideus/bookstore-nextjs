@@ -1,0 +1,59 @@
+.cartHero {
+  width: 100%;
+  height: 25rem;
+  background-color: brown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cartHeroContent {
+  text-align: center;
+  color: burlywood;
+  font-family: "Oswald";
+  padding-top: 10rem;
+}
+
+.cartHeroContent h3 {
+  font-family: "Meow Script", cursive;
+  font-size: 3.5rem;
+}
+
+.cartHeroContent h1 {
+  font-size: 5rem;
+}
+
+.cartList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 6rem;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.cartBox {
+  background-color: burlywood;
+  position: relative;
+  width: 100%;
+  height: 220px;
+  padding: 2px;
+  margin-bottom: 3rem;
+}
+
+.cartBoxInner {
+  width: 96%;
+  height: 96%;
+  margin: 0 auto;
+  margin-top: 0.25rem;
+  border: 2px solid brown;
+  color: black;
+  padding-top: 2rem;
+}
+
+@media (max-width: 666px) {
+  .cartList {
+    margin: 6rem 0;
+    margin-bottom: 0rem;
+  }
+}

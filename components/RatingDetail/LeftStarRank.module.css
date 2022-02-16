@@ -1,0 +1,30 @@
+.starRank {
+  font-family: "Meow Script", cursive;
+  font-size: x-large;
+  display: flex;
+
+  align-items: center;
+}
+
+.starLineCont {
+  width: 65%;
+  margin-left: 80px;
+  background-color: grey;
+  border-radius: 20px;
+  height: 40px;
+  padding: 6.5px;
+}
+
+.starLine {
+  height: 100%;
+  background-color: darkred;
+  border-radius: 20px;
+  width: 0%;
+}
+
+.starRank:last-child {
+  margin-left: 15px;
+}
+.starRank:last-child .starLineCont {
+  width: 66%;
+}

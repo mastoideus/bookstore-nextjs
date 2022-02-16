@@ -1,0 +1,44 @@
+.right {
+  flex: 1;
+  text-align: center;
+}
+
+.imageCont {
+  position: relative;
+  transition: all 0.3s;
+}
+.image {
+  object-fit: contain;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.imageCont:hover {
+  background-color: darkred;
+}
+.image:hover {
+  opacity: 0.5;
+}
+
+.rateList {
+  padding-top: 50px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+  overflow-y: scroll;
+}
+
+.right h3 {
+  font-family: "Meow Script";
+  font-size: 30px;
+  border-bottom: 3px solid darkred;
+  background-color: rgb(187, 181, 181);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 40%;
+  margin: 0 auto;
+}

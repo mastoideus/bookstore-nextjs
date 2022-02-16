@@ -1,0 +1,31 @@
+.appBtn {
+  display: flex;
+  color: white;
+  background-color: black;
+  width: 14rem;
+  align-items: center;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  padding-right: 1rem;
+}
+
+.img {
+  object-fit: contain;
+}
+
+.appBtnCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.subTitle {
+  font-size: 0.6rem;
+}
+.title {
+  font-size: 1.2rem;
+  z-index: 100;
+}
