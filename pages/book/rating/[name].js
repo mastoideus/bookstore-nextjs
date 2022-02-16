@@ -1,5 +1,5 @@
 import React from "react";
-import Book from "../../../models/book";
+import Book from "../../../models/Book";
 import db from "../../../utils/db";
 import RatingDetail from "../../../components/RatingDetail/RatingDetail";
 
