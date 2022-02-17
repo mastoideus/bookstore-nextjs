@@ -6,12 +6,16 @@ import { FaUserAlt } from "react-icons/fa";
 import { useGlobalModeContext } from "../mode-context";
 import { useSession } from "next-auth/client";
 import { signOut } from "next-auth/client";
+import { useRouter } from "next/router";
 
 const MainHeader = (props) => {
   const { modeState, darkModeHandler } = useGlobalModeContext();
   const [session, loading] = useSession();
 
+  const router = useRouter();
+
   const logoutHandler = () => {
+    router.push("/");
     signOut();
   };
 
