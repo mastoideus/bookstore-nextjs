@@ -17,7 +17,7 @@ const connect = async () => {
     await mongoose.disconnect();
   }
 
-  const db = await mongoose.connect(process.env.MONGODB_URI, {
+  const db = await mongoose.connect("mongodb://localhost/bookstore", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   });
