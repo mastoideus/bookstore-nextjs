@@ -17,10 +17,13 @@ const connect = async () => {
     await mongoose.disconnect();
   }
 
-  const db = await mongoose.connect("mongodb://127.0.0.1/bookstore", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  });
+  const db = await mongoose.connect(
+    `mongodb+srv://${process.env.mongo_username}:${process.env.mongo_password}@${process.env.mongo_cluster}.d2mgr.mongodb.net/${process.env.mongo_database}?retryWrites=true&w=majority`,
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    }
+  );
   console.log("new connection");
   connection.isConnected = db.connections[0].readyState;
 };
@@ -37,9 +40,15 @@ const disconnect = async () => {
 };
 
 const convertDocToObj = (doc) => {
-  doc._id = doc._id.toString();
-  doc.createdAt = doc.createdAt.toString();
-  doc.updatedAt = doc.updatedAt.toString();
+  if (doc._id !== undefined) {
+    doc._id = doc._id.toString();
+  }
+  /*doc._id = doc._id.toString();*/
+  /*doc.createdAt = doc.createdAt.toString();*/
+  if (doc.updatedAt !== undefined) {
+    doc.updatedAt = doc.updatedAt.toString();
+  }
+  /*doc.updatedAt = doc.updatedAt.toString();*/
 
   return doc;
 };

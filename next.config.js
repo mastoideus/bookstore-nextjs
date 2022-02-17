@@ -16,7 +16,7 @@ module.exports = (phase) => {
       mongo_username: "anel",
       mongo_password: "mvYAvgaQHIx5hXHp",
       mongo_cluster: "cluster0",
-      mongo_database: "bookstore",
+      mongo_database: "bookstore-dev",
     },
   };
 };
