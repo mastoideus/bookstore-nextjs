@@ -114,12 +114,12 @@ input:checked + .slider:before {
 
 .logoutBtn {
   outline: none;
-  border: 1.2px solid darkred;
+  border: 1.2px solid black;
   border-radius: 1rem;
   padding: 0.4rem 0.8rem;
   background-color: transparent;
   font-size: medium;
-  color: darkred;
+  color: black;
   transition: all 0.3s;
   cursor: pointer;
 }
@@ -174,5 +174,13 @@ input:checked + .slider:before {
   }
   .changeNavBgd {
     background-color: #042541;
+  }
+  .ordersLink {
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
   }
 }

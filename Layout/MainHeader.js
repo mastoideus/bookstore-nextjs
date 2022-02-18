@@ -44,9 +44,16 @@ const MainHeader = (props) => {
             <span className={`${classes.slider} ${classes.round}`}></span>
           </label>
           {session && (
-            <li>
+            <li className={classes.ordersLink}>
               <Link href="/shipping">
-                <a className={classes.ordersLink}>My Orders</a>
+                <a
+                  className={classes.ordersLink}
+                  style={{
+                    backgroundColor: props.onScrollNav ? "#042541" : "",
+                  }}
+                >
+                  My Orders
+                </a>
               </Link>
             </li>
           )}
@@ -62,7 +69,14 @@ const MainHeader = (props) => {
           </li>
           {session ? (
             <li>
-              <button className={classes.logoutBtn} onClick={logoutHandler}>
+              <button
+                className={classes.logoutBtn}
+                style={{
+                  color: props.onScrollNav ? "wheat" : "black",
+                  borderColor: props.onScrollNav ? "wheat" : "black",
+                }}
+                onClick={logoutHandler}
+              >
                 Logout
               </button>
             </li>
