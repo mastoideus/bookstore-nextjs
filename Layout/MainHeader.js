@@ -15,7 +15,6 @@ const MainHeader = (props) => {
   const router = useRouter();
 
   const logoutHandler = () => {
-    router.push("/login");
     signOut();
   };
 
