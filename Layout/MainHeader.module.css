@@ -183,4 +183,10 @@ input:checked + .slider:before {
     text-align: center;
     border-radius: 10px;
   }
+  .loginOnMob {
+    font-size: 0px;
+  }
+  .loginOnMobIcon {
+    font-size: 20px;
+  }
 }

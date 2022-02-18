@@ -82,8 +82,13 @@ const MainHeader = (props) => {
             </li>
           ) : (
             <li className={classes.loginbtn}>
-              <FaUserAlt />
-              <Link href="/login">Login</Link>
+              {/*<FaUserAlt />*/}
+              <Link href="/login">
+                <a className={classes.loginOnMob}>
+                  <FaUserAlt className={classes.loginOnMobIcon} />
+                  Login
+                </a>
+              </Link>
             </li>
           )}
         </ul>
