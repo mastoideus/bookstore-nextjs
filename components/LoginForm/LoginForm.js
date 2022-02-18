@@ -10,6 +10,7 @@ const LoginForm = () => {
   const [username, setUsername] = useState("");
   const [loginMode, setLoginMode] = useState(false);
   const [resMessage, setResMessage] = useState("");
+  const [loginError, setLoginError] = useState(null);
 
   const router = useRouter();
 
@@ -17,11 +18,12 @@ const LoginForm = () => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       setResMessage(null);
+      setLoginError(null);
     }, 3000);
     return () => {
       clearTimeout(timeout);
     };
-  }, [resMessage]);
+  }, [resMessage, loginError]);
 
   /*submiting for signup or login */
   const submitLoginHandler = async (e) => {
@@ -56,7 +58,11 @@ const LoginForm = () => {
         email: email,
         password: password,
       });
-      router.push("/");
+      setLoginError(result);
+      if (result.error === null) {
+        router.push("/");
+      }
+
       console.log(result);
     }
   };
@@ -67,14 +73,14 @@ const LoginForm = () => {
 
   return (
     <div style={{ paddingTop: "150px" }}>
-      {resMessage && (
+      {(resMessage || loginError?.error) && (
         <h1
           style={{
-            backgroundColor: resMessage.color,
+            backgroundColor: resMessage ? resMessage.color : "red",
           }}
           className={classes.resMessage}
         >
-          {resMessage.message}
+          {resMessage ? resMessage.message : loginError?.error}
         </h1>
       )}
       <form className={classes.loginForm} onSubmit={submitLoginHandler}>

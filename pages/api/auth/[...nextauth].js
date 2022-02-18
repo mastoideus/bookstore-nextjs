@@ -9,6 +9,9 @@ export default NextAuth({
   providers: [
     Providers.Credentials({
       async authorize(credentials) {
+        if (!credentials.email || !credentials.password) {
+          throw new Error("Invalid credentials");
+        }
         const client = await connectToDatabase();
         const db = client.db();
 
