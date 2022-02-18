@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { AiFillStar } from "react-icons/ai";
+import classes from "./BookRating.module.css";
 
 const BookRating = (props) => {
   const [hover, setHover] = useState(null);
@@ -14,6 +15,7 @@ const BookRating = (props) => {
         display: "flex",
         alignItems: "center",
       }}
+      className={classes.starsContainer}
     >
       {[...Array(5)].map((star, i) => {
         const starIndex = i + 1;
@@ -27,6 +29,7 @@ const BookRating = (props) => {
               style={{ display: "none" }}
             />
             <AiFillStar
+              className={classes.stars}
               color={
                 starIndex <= ((props.avRating ? "" : hover) || props.rating)
                   ? "yellow"

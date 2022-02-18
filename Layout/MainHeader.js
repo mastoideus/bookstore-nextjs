@@ -21,9 +21,7 @@ const MainHeader = (props) => {
   return (
     <header
       style={{
-        backgroundColor: `${
-          props.onScrollNav && modeState.darkMode ? "rgb(201, 137, 134)" : ""
-        }`,
+        backgroundColor: `${props.onScrollNav && modeState.darkMode ? "" : ""}`,
       }}
       className={`${classes.header} ${
         props.onScrollNav && classes.changeNavBgd
@@ -37,7 +35,7 @@ const MainHeader = (props) => {
           </h2>
         </a>
       </Link>
-      <nav>
+      <nav className={classes.nav}>
         <ul className={classes.navList}>
           <label
             className={`${classes.switch} ${session && classes.switchLogin}`}
@@ -52,7 +50,10 @@ const MainHeader = (props) => {
               </Link>
             </li>
           )}
-          <li style={{ display: "flex", alignItems: "center" }}>
+          <li
+            style={{ display: "flex", alignItems: "center" }}
+            className={classes.cart}
+          >
             <FaShoppingCart />
             <Link href="/cart">Cart</Link>
             <p className={classes.cartQuantity}>
@@ -66,7 +67,7 @@ const MainHeader = (props) => {
               </button>
             </li>
           ) : (
-            <li>
+            <li className={classes.loginbtn}>
               <FaUserAlt />
               <Link href="/login">Login</Link>
             </li>

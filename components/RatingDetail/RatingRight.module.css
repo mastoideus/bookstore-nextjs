@@ -42,3 +42,9 @@
   width: 40%;
   margin: 0 auto;
 }
+
+@media (max-width: 700px) {
+  .list {
+    width: 60%;
+  }
+}

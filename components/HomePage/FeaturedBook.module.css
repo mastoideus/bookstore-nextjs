@@ -63,15 +63,29 @@
   cursor: pointer;
 }
 
-@media (max-width: 666px) {
+@media (max-width: 700px) {
   .featuredBook {
     width: 105%;
-    height: 21rem;
+    padding: 0rem 2rem;
   }
   .imgContainer {
-    height: 230px;
+    height: 120px;
+    margin-top: 5px;
+    width: 50%;
   }
   .image {
     height: 320px;
+  }
+  .content {
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+  }
+  .btn {
+    padding: 8px;
+    font-size: 13px;
+  }
+  .content p {
+    margin-bottom: 0px;
   }
 }

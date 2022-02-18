@@ -17,7 +17,11 @@ const MainSectionLeft = (props) => {
       <div className={classes.authorList}>
         {authors.map((author) => {
           return (
-            <button className={classes.btn} key={author}>
+            <button
+              className={classes.btn}
+              key={author}
+              onClick={() => props.onAuthor(author)}
+            >
               {author}
             </button>
           );

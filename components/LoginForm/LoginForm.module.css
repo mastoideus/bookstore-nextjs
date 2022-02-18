@@ -86,12 +86,15 @@
     width: 90%;
   }
   .loginForm h2 {
-    width: 20%;
+    width: 26%;
   }
   .resMessage {
     width: 90%;
   }
   .loginBtn {
     width: 40%;
+  }
+  .control input {
+    width: 80%;
   }
 }

@@ -76,6 +76,7 @@ const RatingLeft = (props) => {
         <h2 style={{ color: "darkred" }}>
           {averageRating}
           <small
+            className={classes.votes}
             style={{ fontSize: "20px", color: "grey" }}
           >{`${props.rating.length}(votes)`}</small>
         </h2>

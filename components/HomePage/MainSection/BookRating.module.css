@@ -1,0 +1,9 @@
+@media (max-width: 700px) {
+  .stars {
+    font-size: 20px !important;
+  }
+  .starsContainer {
+    width: 85%;
+    margin: 0 auto;
+  }
+}

@@ -90,3 +90,11 @@
     margin-bottom: 5rem;
   }
 }
+
+@media (max-width: 700px) {
+  .appBtns {
+    width: 100%;
+
+    text-align: center;
+  }
+}

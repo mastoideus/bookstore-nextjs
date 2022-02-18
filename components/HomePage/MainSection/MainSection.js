@@ -33,6 +33,11 @@ const MainSection = (props) => {
     setSortedBooks([...filterByTitle]);
   };
 
+  const onAuthorHandler = (author) => {
+    const booksByAuthor = props.books.filter((book) => book.author === author);
+    setSortedBooks(booksByAuthor);
+  };
+
   useEffect(() => {
     const genresListener = window.addEventListener("scroll", () => {
       if (window.scrollY > 1200) {
@@ -52,6 +57,7 @@ const MainSection = (props) => {
         books={props.books}
         onTitle={onTitleHandler}
         onPrice={onPriceHandler}
+        onAuthor={onAuthorHandler}
       />
       <MainSectionRight
         genres={genres}

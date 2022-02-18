@@ -28,3 +28,24 @@
 .starRank:last-child .starLineCont {
   width: 66%;
 }
+
+@media (max-width: 700px) {
+  .starRank {
+    font-size: medium;
+    width: 100%;
+  }
+  .starRank h3 {
+    margin-right: 1rem;
+  }
+  .starLineCont {
+    height: 20px;
+    margin-left: 0px;
+    width: 80%;
+  }
+  .starRank:last-child {
+    margin-left: 0px;
+  }
+  .starRank:last-child .starLineCont {
+    width: 69%;
+  }
+}

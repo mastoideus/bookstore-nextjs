@@ -46,3 +46,30 @@
 .rankContainer:nth-last-child(3) {
   padding-left: 100px;
 }
+
+@media (max-width: 700px) {
+  .ratingTop h1 {
+    font-size: 20px;
+    margin-right: 25px;
+    margin-left: 10px;
+  }
+  .ratingTop h2 {
+    font-size: 20px;
+  }
+  .left {
+    padding: 5px;
+  }
+  .votes {
+    font-size: 12px !important;
+  }
+  .ratingTop {
+    border-bottom-left-radius: 0px;
+  }
+  .voteBtn {
+    padding: 0.5rem;
+    margin-left: 10px;
+  }
+  .rankContainer {
+    padding: 20px;
+  }
+}

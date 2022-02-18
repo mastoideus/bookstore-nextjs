@@ -17,9 +17,9 @@ handler.patch(async (req, res) => {
       return;
     }
 
-    if (typeof book.rating[0] === "string") {
+    /*if (typeof book.rating[0] === "string") {
       book.rating.splice(0);
-    }
+    }*/
 
     const ratingArray = [...book.rating, rating];
     const result = await Book.updateOne(
