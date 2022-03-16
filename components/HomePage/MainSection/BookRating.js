@@ -14,6 +14,7 @@ const BookRating = (props) => {
       style={{
         display: "flex",
         alignItems: "center",
+        justifyContent: "center",
       }}
       className={classes.starsContainer}
     >

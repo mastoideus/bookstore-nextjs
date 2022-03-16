@@ -34,9 +34,9 @@ const MainSectionBook = (props) => {
       <div className={classes.mainBookInfo}>
         <h1>{props.title}</h1>
         <h3>by {props.author}</h3>
-        <div style={{ margin: "0 15px" }}>
-          <BookRating smallStars="20px" avRating={avRating} />
-        </div>
+
+        <BookRating smallStars="20px" avRating={avRating} />
+
         <div
           style={{
             display: "flex",
