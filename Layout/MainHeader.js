@@ -28,10 +28,10 @@ const MainHeader = (props) => {
       }`}
     >
       <Link href="/" passHref>
-        <a>
+        <a style={{ color: `${props.onScrollNav ? "wheat" : "black"}` }}>
           <h2>
             Bookmark
-            <span style={{ color: "brown" }}>@</span>
+            <span style={{ color: "red" }}>@</span>
           </h2>
         </a>
       </Link>
@@ -62,7 +62,11 @@ const MainHeader = (props) => {
             className={classes.cart}
           >
             <FaShoppingCart />
-            <Link href="/cart">Cart</Link>
+            <Link href="/cart">
+              <a style={{ color: `${props.onScrollNav ? "wheat" : "black"}` }}>
+                Cart
+              </a>
+            </Link>
             <p className={classes.cartQuantity}>
               {modeState.cart.totalQuantity}
             </p>
@@ -84,7 +88,10 @@ const MainHeader = (props) => {
             <li className={classes.loginbtn}>
               {/*<FaUserAlt />*/}
               <Link href="/login">
-                <a className={classes.loginOnMob}>
+                <a
+                  className={classes.loginOnMob}
+                  style={{ color: `${props.onScrollNav ? "wheat" : "black"}` }}
+                >
                   <FaUserAlt className={classes.loginOnMobIcon} />
                   Login
                 </a>

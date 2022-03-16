@@ -17,7 +17,7 @@
 
 .changeNavBgd {
   background-color: #042541;
-  color: rgb(246, 228, 246);
+  color: wheat !important;
   box-shadow: 0px 0px 10px rgba(39, 38, 38, 0.8);
 }
 .navList {
@@ -30,13 +30,16 @@
 .navList li {
   margin-right: 1rem;
 }
+.navList li:hover {
+  color: rgb(134, 85, 85);
+}
 
 .navList li a {
   margin-left: 0.5rem;
 }
 
 .navList li a:hover {
-  color: rgb(128, 29, 29);
+  color: rgb(134, 85, 85) !important;
 }
 
 .header h2 {
